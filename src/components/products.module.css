@@ -1,0 +1,35 @@
+.section {
+  @apply h-screen w-full max-w-3xl mx-auto
+}
+
+.title {
+  @apply font-semibold text-lg text-center py-6
+}
+
+.cardContainer {
+  @apply grid grid-cols-2 gap-4
+}
+
+.cardBox {
+  @apply card rounded-xl text-neutral-700 bg-white p-5 grid grid-rows-2 grid-flow-col w-full gap-1
+}
+
+.cardBox > h3 {
+  @apply font-semibold self-end
+}
+
+.cardBox:nth-child(2) > h3 {
+  @apply text-center self-auto
+}
+
+.cardBox>*:first-child {
+  @apply row-span-2 text-left
+}
+
+.cardBox:nth-child(2) {
+  @apply row-span-2 flex text-center
+}
+
+.description {
+  @apply text-xs
+}

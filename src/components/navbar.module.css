@@ -1,5 +1,5 @@
 .nav {
-  @apply px-[60px] flex justify-between items-center py-6
+  @apply px-[60px] flex justify-between items-center py-6 fixed w-full
 }
 
 .navMenu {
@@ -19,7 +19,7 @@
 }
 
 .drawerMenu {
-  @apply menu p-4 w-80 min-h-full bg-base-200 text-base-content text-white
+  @apply menu p-4 w-80 min-h-full bg-base-200 text-white
 }
 
 .drawerMenu > *:last-child {

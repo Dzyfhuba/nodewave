@@ -3,8 +3,10 @@
 @tailwind utilities;
 
 body {
-  @apply bg-black text-white
+  @apply text-white relative
 }
+
+
 
 .btn-primary {
   @apply bg-primary

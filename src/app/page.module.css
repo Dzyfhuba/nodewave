@@ -1,0 +1,7 @@
+.background {
+  @apply absolute h-screen w-full -z-10 top-0
+}
+
+.background > img {
+  @apply shadow-inner h-screen
+}

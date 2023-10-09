@@ -11,3 +11,7 @@ body {
 .btn-primary {
   @apply bg-primary
 }
+
+.overflow-clip-margin-20 {
+  overflow-clip-margin: padding-box;
+}

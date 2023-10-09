@@ -1,5 +1,5 @@
 .nav {
-  @apply px-[60px] flex justify-between items-center py-6 fixed w-full
+  @apply px-[60px] flex justify-between items-center py-6 fixed w-full z-10
 }
 
 .navMenu {

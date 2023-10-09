@@ -1,9 +1,11 @@
+'use client'
 import Image from "next/image"
 import Logo from '@/images/Logo White 1.png'
 import styles from './navbar.module.css'
 import Link from "next/link"
 import { BiMenuAltLeft } from 'react-icons/bi'
 import { MdClose } from 'react-icons/md'
+import { createRef, useEffect } from "react"
 
 const data = [
   {
@@ -25,8 +27,24 @@ const data = [
 ]
 
 const Navbar = () => {
+  const navRef = createRef<HTMLElement>()
+
+  useEffect(() => {
+    // if scroll down to 100px add background to nav
+
+    const handleScroll = () => {
+      if (window.scrollY > 100) {
+        navRef.current?.classList.add(styles.navBackground)
+      } else {
+        navRef.current?.classList.remove(styles.navBackground)
+      }
+    }
+    
+    window.addEventListener('scroll', handleScroll)
+  }, [])
+
   return (
-    <nav className={styles.nav}>
+    <nav className={styles.nav} ref={navRef}>
       <div className="drawer md:hidden">
         <input id="my-drawer" type="checkbox" className="drawer-toggle" />
         <div className="drawer-content">
@@ -39,9 +57,9 @@ const Navbar = () => {
           <label htmlFor="my-drawer" aria-label="close sidebar" className="drawer-overlay"></label>
           <ul className={styles.drawerMenu}>
             <li className="w-fit ml-auto">
-              <button>
+              <label htmlFor="my-drawer">
                 <MdClose size={24} />
-              </button>
+              </label>
             </li>
             {
               data.map((item, index) => {

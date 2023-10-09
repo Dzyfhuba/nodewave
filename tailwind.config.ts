@@ -8,13 +8,38 @@ const config: Config = {
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
-      },
+      colors: {
+        primary: '#00AD98'
+      }
     },
   },
-  plugins: [],
+  plugins: [require("daisyui")],
+  daisyui: {
+    themes: [
+      {
+        mytheme: {
+
+          "primary": "#00AD98",
+
+          "secondary": "#f000b8",
+
+          "accent": "#1dcdbc",
+
+          "neutral": "#2b3440",
+
+          "base-100": "#000000",
+          "base-200": "#111111",
+
+          "info": "#3abff8",
+
+          "success": "#36d399",
+
+          "warning": "#fbbd23",
+
+          "error": "#f87272",
+        },
+      },
+    ],
+  },
 }
 export default config

@@ -1,0 +1,27 @@
+.nav {
+  @apply px-[60px] flex justify-between items-center py-6
+}
+
+.navMenu {
+  @apply hidden md:flex items-center gap-4 font-medium
+}
+
+.navMenu > *:last-child {
+  @apply btn btn-primary bg-primary border-primary rounded-[29px] normal-case
+}
+
+.navButton {
+  @apply btn btn-primary
+}
+
+.drawerButton {
+  @apply btn btn-square btn-ghost
+}
+
+.drawerMenu {
+  @apply menu p-4 w-80 min-h-full bg-base-200 text-base-content text-white
+}
+
+.drawerMenu > *:last-child {
+  @apply bg-primary border-primary rounded-[29px] normal-case
+}

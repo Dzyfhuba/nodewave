@@ -50,6 +50,8 @@ const Footer = () => {
           ))
         }
       </div>
+
+      <div>Update: October 10 2023</div>
     </footer>
   )
 }

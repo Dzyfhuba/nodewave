@@ -1,0 +1,26 @@
+.h1 {
+  @apply font-semibold text-lg pt-6 pb-3 text-center
+}
+
+.container {
+  @apply carousel w-full
+}
+
+.cardBox {
+  @apply card p-5 text-xs carousel-item w-[500px] h-[300px] mr-5 flex-row gap-4 relative text-white text-center items-center
+}
+.cardBox h3 {
+  @apply font-semibold text-lg
+}
+
+.cardBox > img {
+  @apply h-3/5
+}
+
+.description {
+  @apply text-sm text-left
+}
+
+/* .background {
+  @apply absolute
+} */

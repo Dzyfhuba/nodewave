@@ -1,9 +1,7 @@
-import styles from './works.module.css'
 import RayuMotor from '@/images/Thumnail 4.png'
-import RayuMotorBg from '@/images/Rectangle 20.png'
-import Jasabung from '@/images/Thumnail 5.png'
-import JasabungBg from '@/images/Rectangle 20 (1).png'
+import Jasabung from '@/images/57651b33ac2c2b0cf87c7e4796463bc9.png'
 import Image from 'next/image'
+import styles from './works.module.css'
 
 const data = [
   {

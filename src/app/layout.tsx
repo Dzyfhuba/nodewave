@@ -5,6 +5,7 @@ import { Poppins } from 'next/font/google'
 import styles from './page.module.css'
 import Image from 'next/image'
 import Background from '@/images/background1.png'
+import Footer from '@/components/footer'
 
 const inter = Poppins({ subsets: ['latin'], weight: ['100', '200', '300', '400', '500', '600', '700', '800', '900'], adjustFontFallback: true })
 
@@ -27,6 +28,7 @@ export default function RootLayout({
         <Navbar />
         
         {children}
+        <Footer />
       </body>
     </html>
   )

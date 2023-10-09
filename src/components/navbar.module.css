@@ -1,5 +1,5 @@
 .nav {
-  @apply md:px-[60px] flex justify-between items-center md:py-6 fixed w-full z-10 transition-colors duration-300
+  @apply md:px-[60px] flex justify-between items-center md:py-6 fixed w-full z-30 transition-colors duration-300
 }
 
 .navMenu {

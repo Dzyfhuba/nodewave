@@ -5,6 +5,7 @@ import Products from '@/components/products'
 import Testimonies from '@/components/testimonies'
 import Works from '@/components/works'
 import How from '@/components/how'
+import Examples from '@/components/examples'
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
       <Testimonies />
       <Works />
       <How />
+      <Examples />
     </>
   )
 }

@@ -30,8 +30,7 @@ const Navbar = () => {
   const navRef = createRef<HTMLElement>()
 
   useEffect(() => {
-    // if scroll down to 100px add background to nav
-
+    
     const handleScroll = () => {
       if (window.scrollY > 100) {
         navRef.current?.classList.add(styles.navBackground)
@@ -39,9 +38,10 @@ const Navbar = () => {
         navRef.current?.classList.remove(styles.navBackground)
       }
     }
+    handleScroll()
     
     window.addEventListener('scroll', handleScroll)
-  }, [])
+  }, [navRef])
 
   return (
     <nav className={styles.nav} ref={navRef}>

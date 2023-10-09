@@ -1,0 +1,23 @@
+.section {
+  @apply w-full relative my-10 p-8
+}
+
+.background {
+  @apply absolute top-0 left-0 -z-10 w-full h-full
+}
+
+.h1 {
+  @apply text-xl font-bold text-center pt-6 pb-3
+}
+
+.cardBox {
+  @apply card md:flex-row relative mx-auto rounded-xl overflow-hidden w-full max-w-2xl
+}
+
+.cardBackground {
+  @apply absolute w-full h-full -z-10
+}
+
+.chatBox {
+  @apply bg-white p-5 w-full md:w-60 block h-[400px] overflow-y-scroll rounded-xl carousel carousel-vertical snap-none
+}

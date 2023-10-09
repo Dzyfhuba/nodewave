@@ -3,5 +3,5 @@
 }
 
 .background > img {
-  @apply shadow-inner h-screen
+  @apply shadow-inner h-full w-full
 }
